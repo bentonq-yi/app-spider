@@ -13,3 +13,5 @@ class AppItem(scrapy.Item):
     icon = scrapy.Field()
     company_name = scrapy.Field()
     category = scrapy.Field()
+    rank = scrapy.Field()
+    rank_type = scrapy.Field()
