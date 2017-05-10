@@ -64,9 +64,8 @@ CONCURRENT_REQUESTS_PER_IP = 16
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'appspider.pipelines.FilterPipeline': 300,
-   'appspider.pipelines.SqlitePipeline': 301,
-   'appspider.pipelines.SqliteDebugPipeline': 302,
+    'appspider.pipelines.FilterPipeline': 300,
+    'appspider.pipelines.AppCategoryDbPipeline': 301,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -93,3 +92,5 @@ HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 # FEED_EXPORTERS = {
 #     'sqlite': 'appspider.exporters.SqliteItemExporter',
 # }
+
+# LOG_FILE = 'crawl.log'

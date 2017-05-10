@@ -54,7 +54,7 @@ class AnnieSpider(scrapy.Spider):
         for category in application_category:
             params = {
                 "market": "google-play",
-                "country_code": 'US',
+                "country_code": 'NG',
                 "category": category[0],
                 "date": date,
                 "rank_sorting_type": "rank",
